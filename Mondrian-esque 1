@@ -1,0 +1,40 @@
+function setup() {
+  createCanvas(400, 400);
+  background(240);
+}
+
+function draw() {
+  var topH=120;
+  var middleH=320;
+  var bottomH=360;
+  var leftV=80;
+  var rightV=370
+
+  
+	noStroke()
+
+	fill(220,0,0);  //red
+	rect(leftV,0,middleH,middleH);  //red rectangular
+
+	fill(0,120,255);  //blue
+	rect(mouseX,middleH,leftV,leftV);  //blue rectangular
+
+	fill(255,235,0);  //yellow
+	rect(rightV,bottomH,30,40);  // yellow rectangular
+
+	stroke(0);
+	strokeWeight(10);
+	line(leftV,0,80,400); //left vertical line
+	line(0,320,400,320)  //bottom horizontal line
+	line(370,320,370,400)  // bottom vertical line
+
+	stroke(0)
+  strokeWeight(15)
+	line(375,360,400,360) // bottom horizontal line 2
+	line(0,120,75,120)  // left horizontal line
+
+}
+
+function mousePressed() {
+  background(240);
+}
